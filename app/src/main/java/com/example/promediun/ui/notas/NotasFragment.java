@@ -9,19 +9,18 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.promediun.databinding.FragmentHomeBinding;
+import com.example.promediun.databinding.FragmentNotasBinding;
 
 public class NotasFragment extends Fragment {
 
-    private FragmentHomeBinding binding;
+    private FragmentNotasBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
 
-        binding = FragmentHomeBinding.inflate(inflater, container, false);
-        View root = binding.getRoot();
+        binding = FragmentNotasBinding.inflate(inflater, container, false);
 
-        return root;
+        return binding.getRoot();
     }
 
     @Override
