@@ -8,16 +8,16 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
-import com.example.promediun.databinding.FragmentSlideshowBinding;
+import com.example.promediun.databinding.FragmentAjustesBinding;
 
 public class AjustesFragment extends Fragment {
 
-    private FragmentSlideshowBinding binding;
+    private FragmentAjustesBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
 
-        binding = FragmentSlideshowBinding.inflate(inflater, container, false);
+        binding = FragmentAjustesBinding.inflate(inflater, container, false);
 
         return binding.getRoot();
     }

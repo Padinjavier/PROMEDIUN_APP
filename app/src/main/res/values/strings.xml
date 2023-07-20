@@ -12,4 +12,5 @@
     <string name="menu_boleta_de_notas">Boleta de notas</string>
     <string name="menu_ajustes">Ajustes</string>
     <string name="menu_notas">Notas</string>
+    <string name="modo">MODO</string>
 </resources>

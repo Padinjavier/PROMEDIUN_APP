@@ -8,16 +8,16 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
-import com.example.promediun.databinding.FragmentGalleryBinding;
+import com.example.promediun.databinding.FragmentBoletanotasBinding;
 
 public class BoletaNotasFragment extends Fragment {
 
-    private FragmentGalleryBinding binding;
+    private FragmentBoletanotasBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
 
-        binding = FragmentGalleryBinding.inflate(inflater, container, false);
+        binding = FragmentBoletanotasBinding.inflate(inflater, container, false);
 
         return binding.getRoot();
     }

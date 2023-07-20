@@ -4,11 +4,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ui.notas.NotasFragment">
+    tools:context=".ui.ajustes.AjustesFragment">
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textView4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/menu_notas" />
+        android:text="@string/menu_ajustes" />
 </LinearLayout>
