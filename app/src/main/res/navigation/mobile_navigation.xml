@@ -3,37 +3,25 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@id/nav_horadio">
+    app:startDestination="@id/nav_horario">
 
     <fragment
-        android:id="@+id/nav_horadio"
+        android:id="@+id/nav_horario"
         android:name="com.example.promediun.ui.horario.HorarioFragment"
         android:label="@string/menu_horadio"
-        tools:layout="@layout/fragment_horario" >
-        <action
-            android:id="@+id/action_nav_home_to_nav_gallery"
-            app:destination="@id/nav_gallery" />
-    </fragment>
+        tools:layout="@layout/fragment_horario" />
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.example.promediun.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" >
-        <action
-            android:id="@+id/action_nav_gallery_to_nav_slideshow"
-            app:destination="@id/nav_slideshow" />
-    </fragment>
+        android:id="@+id/nav_boleta_notas"
+        android:name="com.example.promediun.ui.boleta_notas.BoletaNotasFragment"
+        android:label="@string/menu_boleta_de_notas"
+        tools:layout="@layout/fragment_gallery" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.example.promediun.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" >
-        <action
-            android:id="@+id/action_nav_slideshow_to_nav_notas"
-            app:destination="@id/nav_notas" />
-    </fragment>
+        android:id="@+id/nav_ajustes"
+        android:name="com.example.promediun.ui.ajustes.AjustesFragment"
+        android:label="@string/menu_ajustes"
+        tools:layout="@layout/fragment_slideshow" />
     <fragment
         android:id="@+id/nav_notas"
         android:name="com.example.promediun.ui.notas.NotasFragment"

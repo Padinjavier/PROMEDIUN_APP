@@ -1,4 +1,4 @@
-package com.example.promediun.ui.slideshow;
+package com.example.promediun.ui.ajustes;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -12,20 +12,16 @@ import androidx.lifecycle.ViewModelProvider;
 
 import com.example.promediun.databinding.FragmentSlideshowBinding;
 
-public class SlideshowFragment extends Fragment {
+public class AjustesFragment extends Fragment {
 
     private FragmentSlideshowBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        SlideshowViewModel slideshowViewModel =
-                new ViewModelProvider(this).get(SlideshowViewModel.class);
 
         binding = FragmentSlideshowBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textSlideshow;
-        slideshowViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
     }
 
