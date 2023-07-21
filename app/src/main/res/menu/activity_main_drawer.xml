@@ -3,22 +3,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
 
-    <group android:checkableBehavior="single">
+    <group
+        android:checkableBehavior="single"
+        android:menuCategory="container"
+        android:visible="true">
         <item
             android:id="@+id/nav_horario"
-            android:icon="@android:drawable/ic_menu_month"
+            android:icon="@drawable/horarios"
             android:title="@string/menu_horadio" />
         <item
             android:id="@+id/nav_notas"
-            android:icon="@android:drawable/ic_dialog_dialer"
+            android:icon="@drawable/boletanotasgeneral"
             android:title="@string/menu_notas" />
         <item
             android:id="@+id/nav_boleta_notas"
-            android:icon="?android:attr/actionModeFindDrawable"
+            android:icon="@drawable/boletaboleta"
             android:title="@string/menu_boleta_de_notas" />
         <item
             android:id="@+id/nav_ajustes"
-            android:icon="@android:drawable/ic_menu_manage"
+            android:icon="@drawable/configuraciones"
             android:title="@string/menu_ajustes" />
     </group>
 </menu>
