@@ -13,4 +13,14 @@
     <string name="menu_ajustes">Ajustes</string>
     <string name="menu_notas">Notas</string>
     <string name="modo">MODO</string>
+    <string name="mis_notas">MIS NOTAS</string>
+    <string name="pc_1">PC 1</string>
+    <string name="pc_2">PC 2</string>
+    <string name="pc_3">PC 3</string>
+    <string name="pc_4">PC 4</string>
+    <string name="parcial">PARCIAL</string>
+    <string name="examen_final">EXAMEN FINAL</string>
+    <string name="calcular">CALCULAR</string>
+    <string name="nuevo">NUEVO</string>
+    <string name="completar">COMPLETAR</string>
 </resources>
