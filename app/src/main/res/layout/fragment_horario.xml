@@ -5,7 +5,31 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ui.horario.HorarioFragment" >
+    android:padding="30dp"
+    tools:context=".ui.horario.HorarioFragment">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:counterEnabled="true"
+        app:counterMaxLength="2"
+        app:endIconMode="clear_text"
+        app:helperText="Requerido"
+        app:startIconDrawable="@drawable/pc">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/pc_1"
+            android:inputType="number"
+            tools:ignore="TextContrastCheck,VisualLintTextFieldSize" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
 
 
     <com.airbnb.lottie.LottieAnimationView
@@ -17,10 +41,24 @@
         app:lottie_rawRes="@raw/animation_lkbka7v5"
         tools:ignore="ImageContrastCheck" />
 
-    <TextView
-        android:id="@+id/textView3"
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/menu_horadio" />
+        app:counterEnabled="true"
+        app:counterMaxLength="2"
+        app:helperText="Requerido"
+        app:passwordToggleEnabled="true"
+        app:startIconDrawable="@drawable/pc">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/pc_1"
+            android:inputType="textPassword"
+            tools:ignore="TextContrastCheck,VisualLintTextFieldSize" />
+
+    </com.google.android.material.textfield.TextInputLayout>
 
 </LinearLayout>

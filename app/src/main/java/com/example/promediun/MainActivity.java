@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
     private static final String PREFS_NAME = "MyPrefs";
     private static final String THEME_KEY = "Theme";
 
-
+//    public ActivityMainBinding binding;
 
 
     @Override
@@ -70,6 +70,11 @@ public class MainActivity extends AppCompatActivity {
         });
         setDayNight(isDarkMode);
 
+
+
+        // Inflar el diseño utilizando ViewBinding
+//        binding = ActivityMainBinding.inflate(getLayoutInflater());
+//        setContentView(binding.getRoot());
 
     }
     private void setDayNight(boolean isDarkMode) {

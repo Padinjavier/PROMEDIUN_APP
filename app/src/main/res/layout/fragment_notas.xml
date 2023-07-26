@@ -16,148 +16,145 @@
         android:textColor="#FFFFFF"
         android:textSize="48sp" />
 
-    <LinearLayout
+    <Space
         android:layout_width="match_parent"
-        android:layout_height="500dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="90dp"
-        android:layout_marginRight="10dp"
-        android:background="@drawable/fondo_dos"
-        android:orientation="vertical"
-        android:paddingLeft="20dp"
-        android:paddingTop="20dp"
-        android:paddingRight="20dp"
-        android:paddingBottom="20dp">
+        android:layout_height="50dp" />
 
-        <TableLayout
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            tools:ignore="UselessParent">
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
 
-            <LinearLayout
+            <EditText
+                android:id="@+id/pc1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
-                android:orientation="vertical">
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/pc_1"
+                android:inputType="number"
+                android:textColorHint="#424242"
+                tools:ignore="TouchTargetSizeCheck" />
 
-                <EditText
-                    android:id="@+id/pc1"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:autofillHints=""
-                    android:ems="10"
-                    android:hint="@string/pc_1"
-                    android:inputType="number"
-                    android:textColorHint="#424242"
-                    tools:ignore="TouchTargetSizeCheck" />
-
-                <EditText
-                    android:id="@+id/pc2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:autofillHints=""
-                    android:ems="10"
-                    android:hint="@string/pc_2"
-                    android:inputType="number"
-                    android:textColorHint="#424242"
-                    tools:ignore="TouchTargetSizeCheck" />
-
-                <EditText
-                    android:id="@+id/pc3"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:autofillHints=""
-                    android:ems="10"
-                    android:hint="@string/pc_3"
-                    android:inputType="number"
-                    android:textColorHint="#424242"
-                    tools:ignore="TouchTargetSizeCheck" />
-
-                <EditText
-                    android:id="@+id/pc4"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:autofillHints=""
-                    android:ems="10"
-                    android:hint="@string/pc_4"
-                    android:inputType="number"
-                    android:textColorHint="#424242"
-                    tools:ignore="TouchTargetSizeCheck" />
-
-                <EditText
-                    android:id="@+id/parcial"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:autofillHints=""
-                    android:ems="10"
-                    android:hint="@string/parcial"
-                    android:inputType="number"
-                    android:textColorHint="#424242"
-                    tools:ignore="TouchTargetSizeCheck" />
-
-                <EditText
-                    android:id="@+id/exfinal"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:autofillHints=""
-                    android:ems="10"
-                    android:hint="@string/examen_final"
-                    android:inputType="number"
-                    android:textColorHint="#424242"
-                    tools:ignore="TouchTargetSizeCheck" />
-
-            </LinearLayout>
-
-
-            <LinearLayout
+            <EditText
+                android:id="@+id/pc2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center_vertical">
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/pc_2"
+                android:inputType="number"
+                android:textColorHint="#424242"
+                tools:ignore="TouchTargetSizeCheck" />
 
-                <Button
-                    android:id="@+id/calcular"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0"
-                    android:text="@string/calcular"
-                    android:textColor="#6A1B9A"
-                    tools:ignore="VisualLintButtonSize" />
+            <EditText
+                android:id="@+id/pc3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/pc_3"
+                android:inputType="number"
+                android:textColorHint="#424242"
+                tools:ignore="TouchTargetSizeCheck" />
 
-                <Space
-                    android:layout_width="10dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0" />
+            <EditText
+                android:id="@+id/pc4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/pc_4"
+                android:inputType="number"
+                android:textColorHint="#424242"
+                tools:ignore="TouchTargetSizeCheck" />
 
-                <Button
-                    android:id="@+id/nuevo"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="@string/nuevo"
-                    android:textColor="#6A1B9A"
-                    tools:ignore="VisualLintButtonSize" />
+            <EditText
+                android:id="@+id/parcial"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/parcial"
+                android:inputType="number"
+                android:textColorHint="#424242"
+                tools:ignore="TouchTargetSizeCheck" />
 
-                <Space
-                    android:layout_width="10dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0" />
+            <EditText
+                android:id="@+id/exfinal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/examen_final"
+                android:inputType="number"
+                android:textColorHint="#424242"
+                tools:ignore="TouchTargetSizeCheck" />
 
-                <Button
-                    android:id="@+id/completar"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0"
-                    android:text="@string/completar"
-                    android:textColor="#6A1B9A"
-                    tools:ignore="VisualLintButtonSize,VisualLintBounds" />
-            </LinearLayout>
+        </LinearLayout>
 
-        </TableLayout>
 
-        <TextView
-            android:id="@+id/textView5"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="TextView" />
-    </LinearLayout>
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <Button
+                android:id="@+id/calcular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:text="@string/calcular"
+                android:textColor="#6A1B9A"
+                tools:ignore="VisualLintButtonSize" />
+
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0" />
+
+            <Button
+                android:id="@+id/nuevo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/nuevo"
+                android:textColor="#6A1B9A"
+                tools:ignore="VisualLintButtonSize" />
+
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0" />
+
+            <Button
+                android:id="@+id/completar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:text="@string/completar"
+                android:textColor="#6A1B9A"
+                tools:ignore="VisualLintButtonSize,VisualLintBounds" />
+
+        </LinearLayout>
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/resulnotas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/asterisco"
+        android:textAlignment="center" />
+
 </LinearLayout>
